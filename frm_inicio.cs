@@ -35,7 +35,7 @@ namespace Interfaz
                 else
                 {
 
-                    MessageBox.Show("Datos Incorrectos, por favor revisa y reintenta");
+                    MessageBox.Show("Datos incorrectos, por favor revisa y reintenta");
                 }
             }
             catch (Exception ex)

@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             splitContainer1 = new SplitContainer();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             button6 = new Button();
             button5 = new Button();
             button4 = new Button();
             button3 = new Button();
             button2 = new Button();
             button1 = new Button();
-            flowLayoutPanel1 = new FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -64,10 +64,17 @@
             splitContainer1.SplitterDistance = 1030;
             splitContainer1.TabIndex = 0;
             // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.Location = new Point(3, 144);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(1024, 555);
+            flowLayoutPanel1.TabIndex = 0;
+            // 
             // button6
             // 
             button6.BackColor = Color.Red;
-            button6.Location = new Point(5, 705);
+            button6.Location = new Point(3, 705);
             button6.Name = "button6";
             button6.Size = new Size(249, 135);
             button6.TabIndex = 5;
@@ -118,13 +125,6 @@
             button1.TabIndex = 0;
             button1.Text = "Ultimo Ticket";
             button1.UseVisualStyleBackColor = true;
-            // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.Location = new Point(3, 144);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(1024, 555);
-            flowLayoutPanel1.TabIndex = 0;
             // 
             // frm_principal
             // 
