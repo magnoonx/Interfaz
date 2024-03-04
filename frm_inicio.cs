@@ -37,13 +37,14 @@ namespace Interfaz
 
                     MessageBox.Show("Datos Incorrectos, por favor revisa y reintenta");
                 }
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
-                
+
                 MessageBox.Show("No se pudo conectar con el servidor, intente más tarde", "Error de Conexión");
                 Console.WriteLine(ex.Message);
             }
-            
+
         }
         public frm_inicio()
         {
@@ -58,6 +59,12 @@ namespace Interfaz
         {
 
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {

@@ -1,4 +1,5 @@
-﻿namespace Interfaz
+﻿
+namespace Interfaz
 {
     partial class frm_inicio
     {
@@ -35,21 +36,22 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            button2 = new Button();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(68, 314);
+            button1.Location = new Point(26, 309);
             button1.Name = "button1";
-            button1.Size = new Size(314, 51);
+            button1.Size = new Size(314, 46);
             button1.TabIndex = 0;
-            button1.Text = "Inicio de Sesión";
+            button1.Text = "Iniciar Sesión";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // Usuario
             // 
-            Usuario.Location = new Point(68, 165);
+            Usuario.Location = new Point(26, 160);
             Usuario.Name = "Usuario";
             Usuario.Size = new Size(314, 27);
             Usuario.TabIndex = 1;
@@ -58,7 +60,7 @@
             // 
             // Clave
             // 
-            Clave.Location = new Point(68, 257);
+            Clave.Location = new Point(26, 252);
             Clave.Name = "Clave";
             Clave.PasswordChar = '*';
             Clave.Size = new Size(314, 27);
@@ -69,7 +71,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(166, 216);
+            label1.Location = new Point(124, 211);
             label1.Name = "label1";
             label1.Size = new Size(118, 28);
             label1.TabIndex = 3;
@@ -79,7 +81,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(154, 123);
+            label2.Location = new Point(112, 118);
             label2.Name = "label2";
             label2.Size = new Size(142, 28);
             label2.TabIndex = 4;
@@ -89,7 +91,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(151, 28);
+            label3.Location = new Point(109, 23);
             label3.Name = "label3";
             label3.Size = new Size(145, 36);
             label3.TabIndex = 5;
@@ -98,18 +100,29 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(102, 64);
+            label4.Location = new Point(60, 59);
             label4.Name = "label4";
             label4.Size = new Size(246, 20);
             label4.TabIndex = 6;
             label4.Text = "Sistema Automatizado de Flujo Vial";
             // 
-            // Form1
+            // button2
+            // 
+            button2.Location = new Point(26, 361);
+            button2.Name = "button2";
+            button2.Size = new Size(314, 47);
+            button2.TabIndex = 7;
+            button2.Text = "Cancelar";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click_1;
+            // 
+            // frm_inicio
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(445, 398);
+            ClientSize = new Size(365, 429);
             ControlBox = false;
+            Controls.Add(button2);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -118,11 +131,16 @@
             Controls.Add(Usuario);
             Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.Fixed3D;
-            Name = "Form1";
+            Name = "frm_inicio";
             Text = "Inicio";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
@@ -134,5 +152,6 @@
         private Label label2;
         private Label label3;
         private Label label4;
+        private Button button2;
     }
 }

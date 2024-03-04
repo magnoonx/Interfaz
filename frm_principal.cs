@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Interfaz
 {
-    public partial class Form2 : Form
+    public partial class frm_principal : Form
     {
-        public Form2()
+        public frm_principal()
         {
             InitializeComponent();
         }
