@@ -3,6 +3,8 @@ using System.Security.Policy;
 using System.Text;
 using Interfaz.Models;
 using Newtonsoft.Json;
+using System;
+using System.Web;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Interfaz
@@ -28,8 +30,15 @@ namespace Interfaz
                 {
                     string res = await response.Content.ReadAsStringAsync();
                     MessageBox.Show(res);
+                   // dynamic data = JsonConvert.DeserializeObject<dynamic>(res);
 
-
+                   // string token = data;
+                  //  var TokenModel = new TokenModel
+                    {
+                   //     token_global = token
+                        
+                };
+                   
 
                 }
                 else
@@ -72,10 +81,10 @@ namespace Interfaz
             //MessageBox.Show("Hola Mundo");
             Apiconn();
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Usuario.Focus();
         }
+
     }
 }

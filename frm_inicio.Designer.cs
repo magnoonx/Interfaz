@@ -29,6 +29,7 @@ namespace Interfaz
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_inicio));
             button1 = new Button();
             Usuario = new TextBox();
             Clave = new TextBox();
@@ -41,86 +42,53 @@ namespace Interfaz
             // 
             // button1
             // 
-            button1.Location = new Point(26, 309);
+            resources.ApplyResources(button1, "button1");
             button1.Name = "button1";
-            button1.Size = new Size(314, 46);
-            button1.TabIndex = 0;
-            button1.Text = "Iniciar Sesión";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // Usuario
             // 
-            Usuario.Location = new Point(26, 160);
+            resources.ApplyResources(Usuario, "Usuario");
             Usuario.Name = "Usuario";
-            Usuario.Size = new Size(314, 27);
-            Usuario.TabIndex = 1;
-            Usuario.TextAlign = HorizontalAlignment.Center;
             Usuario.TextChanged += Usuario_TextChanged;
             // 
             // Clave
             // 
-            Clave.Location = new Point(26, 252);
+            resources.ApplyResources(Clave, "Clave");
             Clave.Name = "Clave";
-            Clave.PasswordChar = '*';
-            Clave.Size = new Size(314, 27);
-            Clave.TabIndex = 2;
-            Clave.TextAlign = HorizontalAlignment.Center;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(124, 211);
+            resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
-            label1.Size = new Size(118, 28);
-            label1.TabIndex = 3;
-            label1.Text = "Contraseña";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(112, 118);
+            resources.ApplyResources(label2, "label2");
             label2.Name = "label2";
-            label2.Size = new Size(142, 28);
-            label2.TabIndex = 4;
-            label2.Text = "Usuario / DNI";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Tahoma", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(109, 23);
+            resources.ApplyResources(label3, "label3");
             label3.Name = "label3";
-            label3.Size = new Size(145, 36);
-            label3.TabIndex = 5;
-            label3.Text = "SAFVIAL";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(60, 59);
+            resources.ApplyResources(label4, "label4");
             label4.Name = "label4";
-            label4.Size = new Size(246, 20);
-            label4.TabIndex = 6;
-            label4.Text = "Sistema Automatizado de Flujo Vial";
             // 
             // button2
             // 
-            button2.Location = new Point(26, 361);
+            resources.ApplyResources(button2, "button2");
             button2.Name = "button2";
-            button2.Size = new Size(314, 47);
-            button2.TabIndex = 7;
-            button2.Text = "Cancelar";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click_1;
             // 
             // frm_inicio
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(365, 429);
             ControlBox = false;
             Controls.Add(button2);
             Controls.Add(label4);
@@ -130,9 +98,8 @@ namespace Interfaz
             Controls.Add(Clave);
             Controls.Add(Usuario);
             Controls.Add(button1);
-            FormBorderStyle = FormBorderStyle.Fixed3D;
+            FormBorderStyle = FormBorderStyle.None;
             Name = "frm_inicio";
-            Text = "Inicio";
             Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
